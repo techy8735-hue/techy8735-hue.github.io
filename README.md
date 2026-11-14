@@ -1,35 +1,54 @@
 # Tejus Krishna — Portfolio
 
-Personal portfolio for Tejus Krishna K.S., final-year B.Voc IT student. A deliberate dark editorial design with project case studies and restrained motion.
+A personal portfolio for Tejus Krishna K.S., a final-year B.Voc Information Technology student at Christ College, Irinjalakuda.
 
-## Live websites
+**Portfolio:** https://techy8735-hue.github.io/
 
-- **GitHub Pages:** https://techy8735-hue.github.io/ (available after GitHub Pages is enabled and the deployment finishes)
-- **Lovable:** https://tejus-krishna-portfolio.lovable.app/
+## Overview
 
-## Stack
+This website presents selected work in web development and IoT alongside technical skills, internship experience and education. It uses a dark, editorial visual system with restrained motion, responsive layouts and detailed project pages.
 
-React 19, TypeScript, Vite, Tailwind CSS v4, Motion for React, TanStack Router. This GitHub version is a standalone client-side app adapted from the Lovable-hosted design.
+## Technology
 
-## Local development
+- React and TypeScript
+- Vite
+- Tailwind CSS
+- TanStack Router
+- Motion for React
+
+## Development
+
+Requirements: Node.js 22 or later.
 
 ```bash
 npm install
 npm run dev
+```
+
+To verify the project:
+
+```bash
 npm run typecheck
 npm run build
 ```
 
-## Deploy to GitHub Pages
+## Structure
 
-A GitHub Actions workflow builds the project on every push to `main`. In repository **Settings → Pages → Build and deployment**, set **Source: GitHub Actions**. The domain is `https://techy8735-hue.github.io/`.
+- `src/components/site/` — portfolio sections, navigation and project illustrations
+- `src/data/profile.ts` — profile details, skills, experience and projects
+- `src/routes/` — homepage and project case-study routes
+- `src/styles.css` — global typography and visual styles
+- `public/` — static files and routing fallback
 
-The `public/404.html` redirect restores deep links to the project case-study routes under GitHub Pages.
+The project illustrations are concept diagrams, not photographs of completed builds.
 
-## Content
+## Deployment
 
-Update CV information in `src/data/profile.ts`. Project diagrams are illustrative diagrams, not photographs of the original builds. A CV download link is not enabled until the actual PDF is added to `public/` and `profile.cvUrl` is configured.
+Commits to the `main` branch trigger the workflow in `.github/workflows/deploy.yml`. Configure **Settings → Pages → Build and deployment → GitHub Actions** to publish the website.
 
-## Design updates
+Project case-study URLs use the `public/404.html` fallback to support direct navigation on GitHub Pages.
 
-This is a **separate deployment** of the Lovable site. Edits in Lovable do not automatically sync to this repository.
+## Contact
+
+- Email: techy8735@gmail.com
+- GitHub: https://github.com/techy8735-hue

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1c1a18" />
+  <meta name="description" content="Portfolio of Tejus Krishna K.S., B.Voc IT student focused on web development and data analytics." />
+  <title>Tejus Krishna | Developer & Data Analytics</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap" />
+  <script>
+    // GitHub Pages serves a redirect for unknown SPA paths; restore that path before React runs.
+    (function () {
+      var route = new URLSearchParams(location.search).get("__route");
+      if (route && route.charAt(0) === "/" && route.charAt(1) !== "/") {
+        history.replaceState(null, "", route);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
